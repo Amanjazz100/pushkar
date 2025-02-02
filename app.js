@@ -2,6 +2,18 @@ const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controlls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
+const resumeDounload = document.querySelectorAll('.btn-text');
+
+function resumeDownloader(){
+    resumeDounload.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            window.open('https://drive.google.com/file/d/1E9OYti1iCxYb7FoeT-UHQsc0HHjtONBQ/view?usp=drivesdk');
+        })
+    })
+}
+
+resumeDownloader();
+
 
 
 function PageTransition(){
